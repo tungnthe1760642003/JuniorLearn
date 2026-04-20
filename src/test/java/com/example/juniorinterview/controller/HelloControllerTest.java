@@ -17,8 +17,8 @@ class HelloControllerTest {
 
     @Test
     void sayHello_returnsCorrectMessage() throws Exception {
-        mockMvc.perform(get("/hello"))
+        mockMvc.perform(get("/api/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello from CI/CD! 🚀 Ứng dụng đã chạy thành công trên Render!"));
+                .andExpect(content().string("Hello from CI/CD! Da vao duoc roi nhe!"));
     }
 }
